@@ -6,7 +6,16 @@ Input: Text file, boolean expression, and range
 
 Output: the occurrences found in the text file where the boolean expression is satisfied within a user specified range of words.
 
-Example: If the text file was the Book of Mormon and the Boolean expression was "Nephi and jesus" and the range was set to 150, My program would find every instance of where Nephi was within 150 characters of teh word Lehi. Here is the output.
+## To use
+in the file Boolean_Search/booleanEvaluator.py, at the bottom edit these variables.
+
+file = ""
+expression = ""
+userDefinedLength = 150
+
+
+## Example use
+If the text file was the Book of Mormon and the Boolean expression was "Nephi and jesus" and the range was set to 150, My program would find every instance of where Nephi was within 150 characters of teh word Lehi. Here is the output.
 
 
 words:  ['jesus', 'nephi']
@@ -321,12 +330,4 @@ and in the likeness of the same body even as he showed himself unto the
 nephite
   
 time:  0.04480695724487305
-
-
-## To use
-in the file Boolean_Search/booleanEvaluator.py, at the bottom edit these variables.
-
-file = ""
-expression = ""
-userDefinedLength = 150
 
