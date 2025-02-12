@@ -1,22 +1,31 @@
-# A boolean word search application
+# Boolean Word Search Application
 
-This application is a boolean word search function where users can use a boolean expression and where that expression is true, my program will find and return those occurrances from a specified text file. This application works with the "and" and "or" boolean operators.
+This application allows users to search for specific word occurrences in a text file based on a Boolean expression. The program supports logical operators, such as `AND` and `OR`, to refine search queries. It then returns the occurrences from the text where the Boolean expression is satisfied within a user-specified range of words.
 
-Input: Text file, boolean expression, and range
+## Input
+- **Text file**: The text file in which to search for word occurrences.
+- **Boolean expression**: A logical expression using `AND` and `OR` operators to define the search criteria.
+- **Range**: A user-defined range (in characters) within which the Boolean expression must hold true.
 
-Output: the occurrences found in the text file where the boolean expression is satisfied within a user specified range of words.
+## Output
+The program will return the occurrences found in the text where the Boolean expression is satisfied within the specified range.
 
-## To use
-in the file Boolean_Search/booleanEvaluator.py, at the bottom edit these variables.
+## Setup
 
-file = ""
-expression = ""
-userDefinedLength = 150
+1. In the `Boolean_Search/booleanEvaluator.py` file, locate the following variables and edit them as needed:
 
+    ```python
+    file = ""  # Path to your text file
+    expression = ""  # Boolean expression (e.g., "word1 AND word2 OR word3")
+    userDefinedLength = 150  # Range of characters to consider
+    ```
 
-## Example use
-If the text file was the Book of Mormon and the Boolean expression was "Nephi and jesus" and the range was set to 150, My program would find every instance of where Nephi was within 150 characters of teh word Lehi. Here is the output.
+## Example Usage
 
+### Scenario
+If the input text file is the *Book of Mormon* and the Boolean expression is `"Nephi AND Jesus"`, with a range set to `150`, the program will find all instances where the word "Nephi" appears within 150 characters of the word "Jesus."
+
+### Sample Output
 
 words:  ['jesus', 'nephi']
 instances found @:  30 [859984, 1180294, 1183588, 1187637, 1199278, 1202669, 1211496, 1216227, 1223434, 1224128, 1225588, 1249571, 1254281, 1255595, 1258535, 1258721, 1265332, 1275201, 1275962, 1276228, 1276394, 1277111, 1277398, 1278902, 1282698, 1283164, 1284284, 1284446, 1286351, 1354622]
